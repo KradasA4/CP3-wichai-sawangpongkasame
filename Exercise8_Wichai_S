@@ -1,0 +1,42 @@
+username = input("enter username: ")
+password = input("enter password: ")
+
+if username=="YourName" and password=="youcantseeme":
+    print("permission granted\n")
+    print('Welcome to TEM SHOP')
+    print('(Vat Included)')
+    print('1)   gin                 80      THB')
+    print('2)   soda                10      THB')
+    print('3)   vodka               180     THB')
+    print('4)   rasberry juice      40      THB')
+    print('5)   mojito              180     THB')
+    print('6)   bloody marry        200     THB')
+    print("---------------------------------")
+
+    print("\npick you drink by number")
+    drink = int(input("I choose: "))
+    amount = int(input("How many do you want?: "))
+
+    if drink == 1:
+        price = 80
+        print("Your drink will cost(THB): ", price * amount)
+    elif drink == 2:
+        price = 10
+        print("Your drink will cost(THB): ", price * amount)
+    elif drink == 3:
+        price = 180
+        print("Your drink will cost(THB): ", price * amount)
+    elif drink == 4:
+        price = 40
+        print("Your drink will cost(THB): ", price * amount)
+    elif drink == 5:
+        price = 180
+        print("Your drink will cost(THB): ", price * amount)
+    elif drink == 6:
+        price = 200
+        print("Your drink will cost(THB): ", price * amount)
+    else:
+        print("wrong number")
+
+else:
+    print("access denied: incorrect username or password")
