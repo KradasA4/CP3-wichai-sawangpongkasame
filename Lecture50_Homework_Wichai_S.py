@@ -7,19 +7,8 @@ def multiplyNumber(x,y):        #multiply
 def divideNumber(x,y):          #divide
     print(int(x/y))
 
-result = "wrong"
-while result == "wrong":
-    x = int(input("first number: "))
-    y = int(input("second number: "))
-    mark = input("math operation: ")
-    if mark == "+":
-        result=addNumber(x,y)
-    elif mark == "-":
-        result=subtractNumber(x,y)
-    elif mark == "*":
-        result=multiplyNumber(x,y)
-    elif mark == "/":
-        result=divideNumber(x,y)
-    else:
-        result="wrong"
-        print("wrong mathematical operation mark, please try again")
+
+addNumber(35,5)
+subtractNumber(35,5)
+multiplyNumber(35,5)
+divideNumber(35,5)
